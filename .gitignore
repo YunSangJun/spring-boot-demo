@@ -3,6 +3,8 @@
 
 /log/
 
+/bin/
+
 ### STS ###
 .apt_generated
 .classpath
