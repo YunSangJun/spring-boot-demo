@@ -1,0 +1,7 @@
+test:
+  string: application-prod.yaml config
+  
+logging:
+  path: /Users/sangjunyun/workspace_sts/spring-boot-demo/log
+  level:
+    root: INFO

@@ -1,0 +1,6 @@
+test:
+  string: application-dev.yaml config
+  
+logging:
+  level:
+    root: DEBUG

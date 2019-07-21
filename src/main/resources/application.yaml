@@ -1,0 +1,23 @@
+
+management:
+  security:
+    enabled: false
+    
+security:
+  user:
+    name: admin
+    password: admin
+    
+spring:
+  application:
+    admin:
+      enabled: true
+  mvc:
+    servlet:
+      load-on-startup: 0
+  h2:
+    console:
+      enabled: true
+      
+test:
+  string: application.yaml config
