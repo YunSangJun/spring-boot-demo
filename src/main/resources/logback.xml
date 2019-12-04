@@ -1,12 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+    <!-- This conversionRule is required to make %wEx work. Instead %n%ex is good too -->
+    <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
 
-  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <pattern>%d %5p %logger: %replace(%m%wEx){'\n','&#x000D;'}%nopex%n</pattern>
-    </encoder>
-  </appender>
-
-  <root level="info">
-    <appender-ref ref="STDOUT" />
-  </root>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %5p %logger: %replace(%m%wEx){'\n','&#x000D;'}%nopex%n</pattern>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
 </configuration>
