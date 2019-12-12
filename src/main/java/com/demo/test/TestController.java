@@ -36,7 +36,7 @@ public class TestController {
 			resultStr = resultStr + "A";
 		}
 
-		logger.info(resultStr);
+		logger.info("length: " + count + ", log: " + resultStr);
 	}
 	
 	@RequestMapping("/error")
